@@ -27,6 +27,7 @@ type: concepts
 - 設定: ~/.hermes/cron/jobs.json
 - deliver=null: ローカル実行（Hermes配送なし）
 - [SILENT]: レスポンス先頭に配置で配送スキップ（scheduler.py+base.py検知あり）
+- feedback-learning-cycle: 毎週日曜6:00 JST（SOUL.md思考プロトコルの一部、漏れ拾い）
 
 ### LCM (Lossless Context Management)
 - context.engine: lcm

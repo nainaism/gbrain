@@ -42,9 +42,11 @@ type: concepts
 - factory-radar系 (週次/月次): 外部環境スキャン
 
 ### Factory Radar
+- 4-set構成: Watch DB + Evaluate DB + Test DB + Execution Plan DB（4/29成田さん承認）
 - 週次collector (日曜6-9時JST): 8情報ソースから革新的プロジェクト候補を収集
 - evaluator: 4軸スコアリング + Hindsight参照
 - reporter: 週次レポート → #team-internal
+- test: 3点セット作成・期間監視・効能レポート
 - fast-track: 成田さんが「導入したい」と言ったツールはWatch/EvaluateをスキップしてTest直行
 
 ### スキル運用
