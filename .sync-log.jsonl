@@ -3,3 +3,6 @@
 {"date":"2026-04-30","source":"session","action":"update","page":"concepts/ai-factory.md","summary":"Factory Radar 4-set plan承認・Test DB追加"}
 {"date":"2026-04-30","source":"hindsight","action":"none"}
 {"date":"2026-04-30","source":"chronicle","action":"none"}
+{"date":"2026-05-01","source":"session","action":"update","page":"concepts/hermes-agent.md","summary":"opencode disabled + Curator pending"}
+{"date":"2026-05-01","source":"chronicle","action":"update","page":"companies/luxerio.md","summary":"kintone ACL再設計 + 予算洗い出し追記"}
+{"date":"2026-05-01","source":"hindsight","action":"none"}
