@@ -36,8 +36,13 @@ type: concepts
 - 圧縮不发火条件: large tool outputでbacklogがfresh_tail外に落ちてthreshold 20000を下回る（4/23確認）
 - 詳細: `devops/lcm-compression-troubleshoot` スキル参照
 
+### Skill管理
+- skills.disabled: opencode（ゾンビプロセス問題により4/30無効化。delegate_taskがopencode serveを終了させずメモリ肥大化）
+- Curator機能（自動スキル保守）: upstream/hermes/curator-infraブランチで開発中、main未マージ
+
 ### 既知の問題
 - [SILENT]強調しすぎるとLLMがスクリプト実行をスキップする（アンチパターン）
+- opencode serveがゾンビプロセス化しやすい（TUI終了時にserve残存、delegate_taskのcleanup漏れ）
 
 ## See Also
 - people/kaede

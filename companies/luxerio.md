@@ -24,6 +24,11 @@ type: companies
 - 新規エントリ→Draft Job作成 + Hindsight retain + GBrain反映
 - Space=luxerioとしてJobを作成
 
+### kintone業務
+- App8/App37: ACL（アクセス権）再設計（月次管理アプリ含む）
+- App53/App54/App49: 予算管理連携（monthly_budget_v2.js）
+- 成田さんが直接kintoneスクリプト設計・ACL構造設計を担当
+
 ## See Also
 - companies/nainaism
 - concepts/ai-factory
@@ -32,3 +37,4 @@ type: companies
 - 2026-04-23: Client ID不一致エラー発生→修正
 - 2026-04-27: OAuth再認証完了
 - 2026-04-29: GBrainページ作成
+- 2026-04-30: kintone ACL再設計（App8/App37）+ 予算未入力店舗洗い出し設計
