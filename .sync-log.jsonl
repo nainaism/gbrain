@@ -6,3 +6,8 @@
 {"date":"2026-05-01","source":"session","action":"update","page":"concepts/hermes-agent.md","summary":"opencode disabled + Curator pending"}
 {"date":"2026-05-01","source":"chronicle","action":"update","page":"companies/luxerio.md","summary":"kintone ACL再設計 + 予算洗い出し追記"}
 {"date":"2026-05-01","source":"hindsight","action":"none"}
+{"date":"2026-05-02","source":"session","action":"update","page":"companies/luxerio.md","summary":"City Heaven競合分析・55グループ情報追加"}
+{"date":"2026-05-02","source":"session","action":"update","page":"concepts/ai-factory.md","summary":"タスク完了報告フォーマット変更・cronモデル統一"}
+{"date":"2026-05-02","source":"session","action":"update","page":"concepts/hermes-agent.md","summary":"v0.12.0 Curator Release・cronモデル統一"}
+{"date":"2026-05-02","source":"chronicle","action":"update","page":"concepts/hermes-agent.md","summary":"v0.12.0 Curator Release確認（Activity Chronicleより）"}
+{"date":"2026-05-02","source":"hindsight","action":"none"}
