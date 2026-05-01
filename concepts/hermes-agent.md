@@ -15,7 +15,7 @@ type: concepts
 - MCP対応: stdio + HTTP servers
 - ネイティブメモリ: Hindsight (vectorize-io)
 - 設定: ~/.hermes/config.yaml
-- バージョン: v0.10.0（47 built-in tools, 20+ LLM providers, 16 platforms）
+- バージョン: v0.12.0「The Curator Release」（5/1確認）
 
 ### 再起動方法
 - COO: `launchctl kickstart -k gui/$(id -u)/ai.hermes.gateway`
@@ -25,6 +25,7 @@ type: concepts
 ### Cronシステム
 - `cronjob` CLIでジョブ管理
 - 設定: ~/.hermes/cron/jobs.json
+- 全ジョブ統一モデル: `glm-5.1` + `zai` + `base_url=None`（5/1設定統一。以前はOllama URL混在で401エラー）
 - deliver=null: ローカル実行（Hermes配送なし）
 - [SILENT]: レスポンス先頭に配置で配送スキップ（scheduler.py+base.py検知あり）
 - feedback-learning-cycle: 毎週日曜6:00 JST（SOUL.md思考プロトコルの一部、漏れ拾い）
@@ -54,3 +55,4 @@ type: concepts
 - 2026-04-12: Brainページ作成
 - 2026-04-23: LCM圧縮不发火トラブルシュート、cron jobs設定
 - 2026-04-28: v0.10.0
+- 2026-05-01: v0.12.0「The Curator Release」確認、全cronジョブモデル統一（glm-5.1/zai）
