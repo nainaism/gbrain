@@ -30,6 +30,16 @@ type: companies
 - IP制限（403）でブラウザからの直接アクセス不可（API/スクレイピングに工夫が必要）
 - 競合分析PDFレポート作成プロジェクトあり（5/1 Failed: 55グループ店舗特定不完全）
 
+### スタイルグループ HP / microCMS
+- スタイルグループのWebサイト制作プロジェクト（5/2開始）
+- microCMSでスキーマ定義書作成済み
+- ロードマップ整理中
+- Google Drive素材（Lstyle/Rstyle）確認済み
+
+### Builto×Luxerio POS連携
+- Builto（外部企業）とLuxerio POSの連携MTG継続中
+- Luxerio POS Prototype確認済み（5/2）
+
 ### kintone業務
 - App8/App37: ACL（アクセス権）再設計（月次管理アプリ含む）
 - App53/App54/App49: 予算管理連携（monthly_budget_v2.js）
@@ -45,3 +55,4 @@ type: companies
 - 2026-04-29: GBrainページ作成
 - 2026-04-30: kintone ACL再設計（App8/App37）+ 予算未入力店舗洗い出し設計
 - 2026-05-01: City Heaven競合分析（55グループ店舗特定不完全で中止）
+- 2026-05-02: Builto×Luxerio POS MTG + Prototype確認、スタイルグループHP/microCMS設計開始

@@ -6,10 +6,10 @@ type: concepts
 
 # ai-factory
 
-3人のAIエージェント（かえで・ハカセ・はなび）+ パグオカで構成される自律型開発・マーケティングチーム。NotionをSSOTとして運用。
+AIエージェントチーム（かえでCOO・ハカセCTO・はなびCMO・つきCFO）+ パグオカで構成される自律型開発・マーケティングチーム。NotionをSSOTとして運用。
 
 ## State
-- エージェント: かえで(COO), ハカセ(CTO), はなび(CMO), パグオカ(Luxerio業務)
+- エージェント: かえで(COO), ハカセ(CTO), はなび(CMO), つき(CFO), パグオカ(Luxerio業務)
 - Notion Workspace: nainaism
 - 通信チャネル: Discord #team-internal (1490011531692347392)
 - 作業ディレクトリ: ~/ai-factory
@@ -38,6 +38,10 @@ type: concepts
 - ambient-observer (73分): DB_x_bookmarks + DB_documents + Meeting Notes監視
 - gbrain-dream-cycle (4:00): Signal Sync + Activity Chronicle + メンテナンス
 - gbrain-embed-sync (毎時): Embedding再生成 + git push
+- factory-radar-collector (日曜6-9時JST): 外部プロジェクト収集
+- factory-radar-evaluator: Watch候補スコアリング
+- factory-radar-reporter (週次): レポート生成・Discord出力
+- self-evolution-weekly (日曜5:00): スキル自動最適化（テスト期間5/29迄）
 - project-driver (30分): Projects/Tasks自動監視・ディスパッチ
 - project-driver-daily (9:00): 日次進捗レポートDM
 - project-worker: かえで担当タスク自動実行

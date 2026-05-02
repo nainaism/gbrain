@@ -11,3 +11,7 @@
 {"date":"2026-05-02","source":"session","action":"update","page":"concepts/hermes-agent.md","summary":"v0.12.0 Curator Release・cronモデル統一"}
 {"date":"2026-05-02","source":"chronicle","action":"update","page":"concepts/hermes-agent.md","summary":"v0.12.0 Curator Release確認（Activity Chronicleより）"}
 {"date":"2026-05-02","source":"hindsight","action":"none"}
+{"date":"2026-05-03","source":"session","action":"create","page":"people/tsuki.md","summary":"CFOつき（TSUKI）新規ページ作成"}
+{"date":"2026-05-03","source":"session","action":"update","page":"concepts/ai-factory.md","summary":"つきCFO追加、Factory Radar cron追加"}
+{"date":"2026-05-03","source":"session","action":"update","page":"concepts/hindsight.md","summary":"LLM変更kimi-k2.6/ZAI直通、Ollama Cloud障害記録"}
+{"date":"2026-05-03","source":"chronicle","action":"update","page":"companies/luxerio.md","summary":"スタイルグループHP/microCMS設計、Builto×Luxerio POS連携"}
