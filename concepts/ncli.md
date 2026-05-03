@@ -1,6 +1,6 @@
 ---
 title: ncli
-slug: ncli
+slug: concepts/ncli
 type: concepts
 ---
 

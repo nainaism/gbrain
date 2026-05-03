@@ -1,6 +1,6 @@
 ---
 title: ai-factory
-slug: ai-factory
+slug: concepts/ai-factory
 type: concepts
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: つき
-slug: tsuki
+slug: people/tsuki
 type: people
 ---
 

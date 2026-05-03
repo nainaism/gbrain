@@ -1,6 +1,6 @@
 ---
 title: Hindsight
-slug: hindsight
+slug: concepts/hindsight
 type: concepts
 ---
 

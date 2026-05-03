@@ -1,6 +1,6 @@
 ---
 title: nainaism
-slug: nainaism
+slug: companies/nainaism
 type: companies
 ---
 

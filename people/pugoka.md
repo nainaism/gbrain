@@ -1,6 +1,6 @@
 ---
 title: パグオカ
-slug: pugoka
+slug: people/pugoka
 type: people
 ---
 

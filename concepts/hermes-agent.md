@@ -1,6 +1,6 @@
 ---
 title: Hermes Agent
-slug: hermes-agent
+slug: concepts/hermes-agent
 type: concepts
 ---
 

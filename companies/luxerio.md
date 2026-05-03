@@ -1,6 +1,6 @@
 ---
 title: Luxerio
-slug: luxerio
+slug: companies/luxerio
 type: companies
 ---
 
@@ -41,9 +41,7 @@ type: companies
 - Luxerio POS Prototype確認済み（5/2）
 
 ### kintone業務
-- App8/App37: ACL（アクセス権）再設計（月次管理アプリ含む）
-- App53/App54/App49: 予算管理連携（monthly_budget_v2.js）
-- 成田さんが直接kintoneスクリプト設計・ACL構造設計を担当
+→ companies/si に移動済み（2026-05-01）
 
 ## See Also
 - companies/nainaism

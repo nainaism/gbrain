@@ -1,6 +1,6 @@
 ---
 title: GBrain
-slug: gbrain
+slug: concepts/gbrain
 type: concepts
 ---
 

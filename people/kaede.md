@@ -1,6 +1,6 @@
 ---
 title: かえで
-slug: kaede
+slug: people/kaede
 type: people
 ---
 

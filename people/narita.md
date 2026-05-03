@@ -1,6 +1,6 @@
 ---
 title: 成田
-slug: narita
+slug: people/narita
 type: people
 ---
 
