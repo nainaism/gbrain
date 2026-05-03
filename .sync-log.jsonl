@@ -15,3 +15,6 @@
 {"date":"2026-05-03","source":"session","action":"update","page":"concepts/ai-factory.md","summary":"つきCFO追加、Factory Radar cron追加"}
 {"date":"2026-05-03","source":"session","action":"update","page":"concepts/hindsight.md","summary":"LLM変更kimi-k2.6/ZAI直通、Ollama Cloud障害記録"}
 {"date":"2026-05-03","source":"chronicle","action":"update","page":"companies/luxerio.md","summary":"スタイルグループHP/microCMS設計、Builto×Luxerio POS連携"}
+{"date":"2026-05-04","source":"session","action":"update","page":"concepts/gbrain.md","summary":"PostgreSQL移行反映・PGLite依存問題更新・embedエラー追記"}
+{"date":"2026-05-04","source":"hindsight","action":"update","page":"concepts/hindsight.md","summary":"LiteLLMフォールバック（Ollama Cloud→ZAI自動切替）追記"}
+{"date":"2026-05-04","source":"chronicle","action":"update","page":"companies/luxerio.md","summary":"Lounge R Style HP再構築・VALTENリサーチ・Paseo連携追記"}
