@@ -35,6 +35,9 @@ type: companies
 - microCMSでスキーマ定義書作成済み
 - ロードマップ整理中
 - Google Drive素材（Lstyle/Rstyle）確認済み
+- **Next.js版公式HPデザイン仕様把握・再構築進行中**（5/3 Activity Chronicle）
+- **VALTEN**: リサーチ対象ブランド（5/3確認）
+- **Paseo連携**: 「Notionページからデザイン再構築」追加検討（5/3）
 
 ### Builto×Luxerio POS連携
 - Builto（外部企業）とLuxerio POSの連携MTG継続中
@@ -54,3 +57,4 @@ type: companies
 - 2026-04-30: kintone ACL再設計（App8/App37）+ 予算未入力店舗洗い出し設計
 - 2026-05-01: City Heaven競合分析（55グループ店舗特定不完全で中止）
 - 2026-05-02: Builto×Luxerio POS MTG + Prototype確認、スタイルグループHP/microCMS設計開始
+- 2026-05-03: Lounge R Style HP再構築開始（Next.js版）、VALTENリサーチ

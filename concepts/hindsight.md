@@ -12,6 +12,7 @@ type: concepts
 - バックエンド: Docker (port 8888), Guard Proxy (port 8887)
 - Banks: coo (かえで), cto (ハカセ), pugoka (パグオカ)
 - LLM: kimi-k2.6 (ZAI直通)（5/3変更。Ollama Cloud推論バックエンド障害で429/timeout連発→ZAI直通に切替）
+- **LiteLLMフォールバック**: sitecustomize.pyのmonkey-patch方式でOllama Cloud→ZAI自動フォールバック実装済み（5/3確認）
 - 設定: profiles/{name}/hindsight/config.json（bankId必須、欠落=retain不達）
 - Guard Proxy: ~/.hindsight/guard_proxy.py (DELETE保護)
 
@@ -48,3 +49,4 @@ type: concepts
 - 2026-04-12: Brainページ作成
 - 2026-04-22: glm-4.7経由retain動作確認
 - 2026-04-24: 429 rate limit問題確認
+- 2026-05-03: LiteLLMフォールバック実装（Ollama Cloud→ZAI自動切替）
