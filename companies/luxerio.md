@@ -1,7 +1,6 @@
 ---
-title: Luxerio
-slug: companies/luxerio
 type: companies
+title: Luxerio
 ---
 
 # Luxerio
@@ -24,6 +23,11 @@ type: companies
 - 新規エントリ→Draft Job作成 + Hindsight retain + GBrain反映
 - Space=luxerioとしてJobを作成
 
+### Wizグループ目標管理
+- オーナーズリストと評価制度導入の計画進行中（5/4デイリー経営定例確認）
+- 提案価格: 月10万円×8ヶ月=80万円、採用管理表アプリ追加オプション+2万円/月
+- タイムライン: 6月トライアル→9月正式→来年3月フル実装
+
 ### City Heaven / ヘブンランキング対策
 - シティヘブン（City Heaven）への掲載・ランキング対策を検討中
 - 55グループ（GOGOグループ, 55group.tv）: すすきので複数店舗展開する待ち合わせ式デリヘル、ヘブン月額100万円以上投資
@@ -38,10 +42,15 @@ type: companies
 - **Next.js版公式HPデザイン仕様把握・再構築進行中**（5/3 Activity Chronicle）
 - **VALTEN**: リサーチ対象ブランド（5/3確認）
 - **Paseo連携**: 「Notionページからデザイン再構築」追加検討（5/3）
+- **Notion DB点検**: 3セッションでスタイルグループDB確認（5/4 Activity Chronicle）
 
 ### Builto×Luxerio POS連携
 - Builto（外部企業）とLuxerio POSの連携MTG継続中
 - Luxerio POS Prototype確認済み（5/2）
+- **GitHub Projects運用設計**: LUX POS Development Board設計（5/4 Activity Chronicle）
+
+### LunaPOS / microCMS
+- microCMSスキーマ確認＆画像格納フロー検証（5/4 Activity Chronicle）
 
 ### kintone業務
 → companies/si に移動済み（2026-05-01）
@@ -58,3 +67,4 @@ type: companies
 - 2026-05-01: City Heaven競合分析（55グループ店舗特定不完全で中止）
 - 2026-05-02: Builto×Luxerio POS MTG + Prototype確認、スタイルグループHP/microCMS設計開始
 - 2026-05-03: Lounge R Style HP再構築開始（Next.js版）、VALTENリサーチ
+- 2026-05-04: Wizグループ目標管理（オーナーズリスト・評価制度 MTG）、店長ダッシュボードapp53同期、GitHub Projects LUX POS Board設計、LunaPOS/microCMS画像格納フロー検証

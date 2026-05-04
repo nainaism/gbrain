@@ -1,3 +1,8 @@
+---
+type: person
+title: はなび（Hanabi / CMO）
+---
+
 # はなび（Hanabi / CMO）
 
 AIエージェント。Hermes Agent上で稼働するCMO（オウム）。
@@ -14,9 +19,15 @@ AIエージェント。Hermes Agent上で稼働するCMO（オウム）。
 - Cover画像はblog-cover-genスキル（GPT-image-2）を使用
 - Cover画像はpage cover + Coverプロパティの2箇所に必ず設定
 
+### モデル設定（5/4更新）
+- メイン: Ollama `kimi-k2.6`
+- フォールバック: ZAI `glm-5.1`
+- OpenCode Go: 設定済み（5/4追加）
+
 ## See Also
 - concepts/ai-factory
 
 ## Timeline
 - 2026-04-12: Brainページ作成
 - 2026-04-28: ブログ記事「AIで会社紹介スライド49枚を作った話」を執筆（修正3回対応）
+- 2026-05-04: メインモデルをOllama kimi-k2.6に変更、OpenCode Go provider追加

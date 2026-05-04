@@ -1,7 +1,6 @@
 ---
-title: Hermes Agent
-slug: concepts/hermes-agent
 type: concepts
+title: Hermes Agent
 ---
 
 # Hermes Agent
@@ -21,6 +20,11 @@ type: concepts
 - COO: `launchctl kickstart -k gui/$(id -u)/ai.hermes.gateway`
 - CTO: `launchctl kickstart -k gui/$(id -u)/ai.hermes.gateway-cto`
 - 絶対に `kill <pid>` 禁止（launchd KeepAliveと競合）
+
+### Providers（5/4更新）
+- **ZAI**: メインプロバイダ（glm-5.1）。cronジョブ統一モデル
+- **Ollama Cloud**: サブプロバイダ。ハカセCTO・はなびCMOはOllamaをメインに設定変更可能
+- **OpenCode Go**: 5/4追加。環境変数 `OPENCODE_GO_API_KEY` + `OPENCODE_GO_BASE_URL`。provider名: `opencode-go`、デフォルトモデル: `glm-5`。全5プロファイル（COO/CTO/CMO/CFO/PUGOKA）に設定済み
 
 ### Cronシステム
 - `cronjob` CLIでジョブ管理
@@ -44,6 +48,7 @@ type: concepts
 ### 既知の問題
 - [SILENT]強調しすぎるとLLMがスクリプト実行をスキップする（アンチパターン）
 - opencode serveがゾンビプロセス化しやすい（TUI終了時にserve残存、delegate_taskのcleanup漏れ）
+- Notion AIの`ask`コマンドがcron contextでサイレント失敗する（5/4確認。workspace switch→message送信は成功扱いだがhistory=[]で応答なし）
 
 ## See Also
 - people/kaede
@@ -56,3 +61,4 @@ type: concepts
 - 2026-04-23: LCM圧縮不发火トラブルシュート、cron jobs設定
 - 2026-04-28: v0.10.0
 - 2026-05-01: v0.12.0「The Curator Release」確認、全cronジョブモデル統一（glm-5.1/zai）
+- 2026-05-04: OpenCode Go provider追加（全5プロファイル）、Notion AI ask cron silent failure確認
