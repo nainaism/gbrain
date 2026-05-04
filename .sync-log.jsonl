@@ -18,3 +18,8 @@
 {"date":"2026-05-04","source":"session","action":"update","page":"concepts/gbrain.md","summary":"PostgreSQL移行反映・PGLite依存問題更新・embedエラー追記"}
 {"date":"2026-05-04","source":"hindsight","action":"update","page":"concepts/hindsight.md","summary":"LiteLLMフォールバック（Ollama Cloud→ZAI自動切替）追記"}
 {"date":"2026-05-04","source":"chronicle","action":"update","page":"companies/luxerio.md","summary":"Lounge R Style HP再構築・VALTENリサーチ・Paseo連携追記"}
+{"date":"2026-05-05","source":"session","action":"update","page":"concepts/hermes-agent.md","summary":"OpenCode Go provider追加（全5プロファイル）、Notion AI ask cron silent failure"}
+{"date":"2026-05-05","source":"session","action":"update","page":"people/hakase.md","summary":"モデル設定追加: メインOllama glm-5.1"}
+{"date":"2026-05-05","source":"session","action":"update","page":"people/hanabi.md","summary":"モデル設定追加: メインOllama kimi-k2.6"}
+{"date":"2026-05-05","source":"chronicle","action":"update","page":"companies/luxerio.md","summary":"Wizグループ目標管理MTG、店長DB app53同期、LUX POS Board設計、LunaPOS/microCMS画像格納フロー"}
+{"date":"2026-05-05","source":"hindsight","action":"none"}
