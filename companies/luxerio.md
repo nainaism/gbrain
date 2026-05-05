@@ -43,6 +43,9 @@ title: Luxerio
 - **VALTEN**: リサーチ対象ブランド（5/3確認）
 - **Paseo連携**: 「Notionページからデザイン再構築」追加検討（5/3）
 - **Notion DB点検**: 3セッションでスタイルグループDB確認（5/4 Activity Chronicle）
+- **/goalコマンドでmicroCMS全データ自動投入**: Hermes夜間セッションでスキーマ確認・画像格納（8.6h）（5/5）
+- **taste-skill導入**: デザイン刷新計画にtaste-skill追加検討（5/5）
+- **ルクセリオ戦略書執筆**: 関係性経済フレーム構築中（5/5）
 
 ### Builto×Luxerio POS連携
 - Builto（外部企業）とLuxerio POSの連携MTG継続中
@@ -68,3 +71,4 @@ title: Luxerio
 - 2026-05-02: Builto×Luxerio POS MTG + Prototype確認、スタイルグループHP/microCMS設計開始
 - 2026-05-03: Lounge R Style HP再構築開始（Next.js版）、VALTENリサーチ
 - 2026-05-04: Wizグループ目標管理（オーナーズリスト・評価制度 MTG）、店長ダッシュボードapp53同期、GitHub Projects LUX POS Board設計、LunaPOS/microCMS画像格納フロー検証
+- 2026-05-05: microCMS全データ自動投入（Hermes /goal）、taste-skill導入検討、ルクセリオ戦略書（関係性経済フレーム）執筆

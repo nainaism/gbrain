@@ -21,10 +21,11 @@ title: Hermes Agent
 - CTO: `launchctl kickstart -k gui/$(id -u)/ai.hermes.gateway-cto`
 - 絶対に `kill <pid>` 禁止（launchd KeepAliveと競合）
 
-### Providers（5/4更新）
+### Providers（5/5更新）
 - **ZAI**: メインプロバイダ（glm-5.1）。cronジョブ統一モデル
 - **Ollama Cloud**: サブプロバイダ。ハカセCTO・はなびCMOはOllamaをメインに設定変更可能
-- **OpenCode Go**: 5/4追加。環境変数 `OPENCODE_GO_API_KEY` + `OPENCODE_GO_BASE_URL`。provider名: `opencode-go`、デフォルトモデル: `glm-5`。全5プロファイル（COO/CTO/CMO/CFO/PUGOKA）に設定済み
+- **OpenCode Go**: 5/4追加。環境変数 `OPENCODE_GO_API_KEY` + `OPENCODE_GO_BASE_URL`。provider名: `opencode-go`、デフォルトモデル: `deepseek-v4-flash`。全5プロファイル（COO/CTO/CMO/CFO/PUGOKA）に設定済み
+  - HindsightのLLMもopencode-go deepseek-v4-flashに統一（5/5）
 
 ### Cronシステム
 - `cronjob` CLIでジョブ管理
@@ -62,3 +63,4 @@ title: Hermes Agent
 - 2026-04-28: v0.10.0
 - 2026-05-01: v0.12.0「The Curator Release」確認、全cronジョブモデル統一（glm-5.1/zai）
 - 2026-05-04: OpenCode Go provider追加（全5プロファイル）、Notion AI ask cron silent failure確認
+- 2026-05-05: OpenCode Goデフォルトモデル修正（glm-5→deepseek-v4-flash）、Hindsight統一確認
