@@ -23,3 +23,7 @@
 {"date":"2026-05-05","source":"session","action":"update","page":"people/hanabi.md","summary":"モデル設定追加: メインOllama kimi-k2.6"}
 {"date":"2026-05-05","source":"chronicle","action":"update","page":"companies/luxerio.md","summary":"Wizグループ目標管理MTG、店長DB app53同期、LUX POS Board設計、LunaPOS/microCMS画像格納フロー"}
 {"date":"2026-05-05","source":"hindsight","action":"none"}
+{"date":"2026-05-06","source":"session","action":"update","page":"concepts/hindsight.md","summary":"LLM設定をopencode-go deepseek-v4-flashに更新（Default/Retain統一）"}
+{"date":"2026-05-06","source":"session","action":"update","page":"concepts/hermes-agent.md","summary":"OpenCode Goデフォルトモデル修正（glm-5→deepseek-v4-flash）"}
+{"date":"2026-05-06","source":"hindsight","action":"none"}
+{"date":"2026-05-06","source":"chronicle","action":"update","page":"companies/luxerio.md","summary":"microCMS全データ自動投入・taste-skill導入・戦略書執筆追加"}
