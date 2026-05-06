@@ -62,16 +62,20 @@ AIエージェントチーム（かえでCOO・ハカセCTO・はなびCMO・つ
 - space-provisioning: 新規Space追加ワークフロー（3箇所設定: ローカル/GitHub, Discord, Notion）
 
 ## See Also
-- people/narita
-- people/kaede
-- concepts/hermes-agent
-- companies/nainaism
+- [[people/narita]]
+- [[people/kaede]]
+- [[people/hakase]]
+- [[people/hanabi]]
+- [[people/tsuki]]
+- [[people/pugoka]]
+- [[concepts/hermes-agent]]
+- [[companies/nainaism]]
 
 ## Timeline
-- 2026-04-12: Brainページ作成
-- 2026-04-22: パグオカHermes移行完了
-- 2026-04-26: Factory Radar初回セットアップ、space-provisioningスキル作成
-- 2026-04-28: nainaism-blog-articleスキル大幅更新
-- 2026-04-29: GBrain入力パイプライン統合完了（セッション+Chronicle+議事録）
-- 2026-05-01: タスク/プロジェクト完了時の報告フォーマット変更（成果詳細 + Notion集約 + DM概要のみ）
-- 2026-05-01: 全cronジョブのモデル統一（glm-5.1/zai/base_url=None）
+- **2026-04-12** | Brainページ作成
+- **2026-04-22** | パグオカHermes移行完了
+- **2026-04-26** | Factory Radar初回セットアップ、space-provisioningスキル作成
+- **2026-04-28** | nainaism-blog-articleスキル大幅更新
+- **2026-04-29** | GBrain入力パイプライン統合完了（セッション+Chronicle+議事録）
+- **2026-05-01** | タスク/プロジェクト完了時の報告フォーマット変更（成果詳細 + Notion集約 + DM概要のみ）
+- **2026-05-01** | 全cronジョブのモデル統一（glm-5.1/zai/base_url=None）

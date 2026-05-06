@@ -29,11 +29,17 @@ type: companies
 - Rate limit: ~3 req/sec、ページ数50超えたら並列度制限を検討（4/24）
 
 ## See Also
-- people/narita
-- concepts/ai-factory
-- companies/luxerio
+- [[people/narita]]
+- [[concepts/ai-factory]]
+- [[concepts/ncli]]
+- [[companies/luxerio]]
 
 ## Timeline
-- 2026-04-12: Brainページ作成
-- 2026-04-24: Notion API timeoutMs 120秒化、patch-notion-loader.cjs追加
-- 2026-04-28: ブログ記事「AIで会社紹介スライド49枚を作った話」完成（レビュー3回、修正20箇所以上）
+- **2026-04-12** | Brainページ作成
+- **2026-04-24** | Notion API timeoutMs 120秒化、patch-notion-loader.cjs追加
+- **2026-04-28** | ブログ記事「AIで会社紹介スライド49枚を作った話」完成（レビュー3回、修正20箇所以上）
+- **2026-05-06** | Referenced in [成田](../people/narita.md)
+- **2026-05-06** | Referenced in [ncli](../concepts/ncli.md)
+- **2026-05-06** | Referenced in [ai-factory](../concepts/ai-factory.md)
+- **2026-05-06** | Referenced in [Luxerio](../companies/luxerio.md)
+- **2026-05-06** | Referenced in [SI](../companies/si.md)

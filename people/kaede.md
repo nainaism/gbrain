@@ -29,10 +29,17 @@ AIエージェント。Hermes Agent上で稼働するCOO（柴犬）。ai-factor
 - 要件不明確、技術的判断、ブロッカーが2日以上 → 成田さんにエスカレーション
 
 ## See Also
-- concepts/ai-factory
-- concepts/hermes-agent
+- [[people/hakase]]
+- [[people/hanabi]]
+- [[people/pugoka]]
+- [[people/tsuki]]
+- [[concepts/ai-factory]]
+- [[concepts/hermes-agent]]
 
 ## Timeline
-- 2026-04-12: Brainページ作成
-- 2026-04-28: ブログ記事レビュー観点を拡張（ストーリー違和感・読者離脱ポイント）
-- 2026-04-29: GBrain更新（実務範囲・エスカレーション基準追記）
+- **2026-04-12** | Brainページ作成
+- **2026-04-28** | ブログ記事レビュー観点を拡張（ストーリー違和感・読者離脱ポイント）
+- **2026-04-29** | GBrain更新（実務範囲・エスカレーション基準追記）
+- **2026-05-06** | Referenced in [成田](../people/narita.md)
+- **2026-05-06** | Referenced in [ai-factory](../concepts/ai-factory.md)
+- **2026-05-06** | Referenced in [Hermes Agent](../concepts/hermes-agent.md)

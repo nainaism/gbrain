@@ -44,12 +44,12 @@ type: concepts
 - Dream Cycle Step 1-3でHindsight→GBrainに蒸留して同期
 
 ## See Also
-- concepts/hermes-agent
-- concepts/gbrain
+- [[concepts/hermes-agent]]
+- [[concepts/gbrain]]
 
 ## Timeline
-- 2026-04-12: Brainページ作成
-- 2026-04-22: glm-4.7経由retain動作確認
-- 2026-04-24: 429 rate limit問題確認
-- 2026-05-03: LiteLLMフォールバック実装（Ollama Cloud→ZAI自動切替）
-- 2026-05-05: LLMをopencode-go deepseek-v4-flashに統一（Default/Retain両方）。sitecustomize.py monkey-patch廃止
+- **2026-04-12** | Brainページ作成
+- **2026-04-22** | glm-4.7経由retain動作確認
+- **2026-04-24** | 429 rate limit問題確認
+- **2026-05-03** | LiteLLMフォールバック実装（Ollama Cloud→ZAI自動切替）
+- **2026-05-05** | LLMをopencode-go deepseek-v4-flashに統一（Default/Retain両方）。sitecustomize.py monkey-patch廃止

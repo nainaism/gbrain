@@ -23,14 +23,18 @@ AIエージェント。Hermes Agent上で稼働する別bot。OpenClawからHerm
 - 認証エラー時は `[SILENT]` で静かに終了
 
 ### 移行経緯
-- 2026-04-22: Hermes pugokaプロファイル作成、launchd登録完了
-- 2026-04-22: OpenClaw停止、launchdエントリ削除・アンロード
+- **2026-04-22** | Hermes pugokaプロファイル作成、launchd登録完了
+- **2026-04-22** | OpenClaw停止、launchdエントリ削除・アンロード
 - 既存Bot Tokenを流用、18チャンネル構築済み
 
 ## See Also
-- companies/luxerio
-- concepts/hermes-agent
+- [[companies/luxerio]]
+- [[concepts/hermes-agent]]
 
 ## Timeline
-- 2026-04-22: Hermes移行完了、安定稼働確認（PID 52335, 18分以上）
-- 2026-04-29: GBrainページ作成
+- **2026-04-22** | Hermes移行完了、安定稼働確認（PID 52335, 18分以上）
+- **2026-04-29** | GBrainページ作成
+- **2026-05-06** | Referenced in [かえで](../people/kaede.md)
+- **2026-05-06** | Referenced in [成田](../people/narita.md)
+- **2026-05-06** | Referenced in [ai-factory](../concepts/ai-factory.md)
+- **2026-05-06** | Referenced in [Luxerio](../companies/luxerio.md)

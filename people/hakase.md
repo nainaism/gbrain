@@ -21,9 +21,13 @@ AIエージェント。Hermes Agent上で稼働するCTO（黒猫）。
 - OpenCode Go: 設定済み（5/4追加）
 
 ## See Also
-- concepts/ai-factory
-- concepts/hermes-agent
+- [[concepts/ai-factory]]
+- [[concepts/hermes-agent]]
 
 ## Timeline
-- 2026-04-12: Brainページ作成
-- 2026-05-04: メインモデルをOllama glm-5.1に変更、OpenCode Go provider追加
+- **2026-04-12** | Brainページ作成
+- **2026-05-04** | メインモデルをOllama glm-5.1に変更、OpenCode Go provider追加
+- **2026-05-06** | Referenced in [かえで](../people/kaede.md)
+- **2026-05-06** | Referenced in [成田](../people/narita.md)
+- **2026-05-06** | Referenced in [ai-factory](../concepts/ai-factory.md)
+- **2026-05-06** | Referenced in [Hermes Agent](../concepts/hermes-agent.md)

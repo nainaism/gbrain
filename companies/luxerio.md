@@ -16,7 +16,7 @@ title: Luxerio
 ### OAuth
 - ブラウザ認証が必要（自動認証不可）
 - 認証エラー時は成田さんに手動再認証を依頼
-- 2026-04-27: OAuth再認証完了（last-known-good stateから復旧）
+- **2026-04-27** | OAuth再認証完了（last-known-good stateから復旧）
 
 ### ambient-observer監視
 - 73分ごとにMeeting Notesをスキャン
@@ -59,16 +59,21 @@ title: Luxerio
 → companies/si に移動済み（2026-05-01）
 
 ## See Also
-- companies/nainaism
-- concepts/ai-factory
+- [[people/pugoka]]
+- [[companies/nainaism]]
+- [[concepts/ai-factory]]
 
 ## Timeline
-- 2026-04-23: Client ID不一致エラー発生→修正
-- 2026-04-27: OAuth再認証完了
-- 2026-04-29: GBrainページ作成
-- 2026-04-30: kintone ACL再設計（App8/App37）+ 予算未入力店舗洗い出し設計
-- 2026-05-01: City Heaven競合分析（55グループ店舗特定不完全で中止）
-- 2026-05-02: Builto×Luxerio POS MTG + Prototype確認、スタイルグループHP/microCMS設計開始
-- 2026-05-03: Lounge R Style HP再構築開始（Next.js版）、VALTENリサーチ
-- 2026-05-04: Wizグループ目標管理（オーナーズリスト・評価制度 MTG）、店長ダッシュボードapp53同期、GitHub Projects LUX POS Board設計、LunaPOS/microCMS画像格納フロー検証
-- 2026-05-05: microCMS全データ自動投入（Hermes /goal）、taste-skill導入検討、ルクセリオ戦略書（関係性経済フレーム）執筆
+- **2026-04-23** | Client ID不一致エラー発生→修正
+- **2026-04-27** | OAuth再認証完了
+- **2026-04-29** | GBrainページ作成
+- **2026-04-30** | kintone ACL再設計（App8/App37）+ 予算未入力店舗洗い出し設計
+- **2026-05-01** | City Heaven競合分析（55グループ店舗特定不完全で中止）
+- **2026-05-02** | Builto×Luxerio POS MTG + Prototype確認、スタイルグループHP/microCMS設計開始
+- **2026-05-03** | Lounge R Style HP再構築開始（Next.js版）、VALTENリサーチ
+- **2026-05-04** | Wizグループ目標管理（オーナーズリスト・評価制度 MTG）、店長ダッシュボードapp53同期、GitHub Projects LUX POS Board設計、LunaPOS/microCMS画像格納フロー検証
+- **2026-05-05** | microCMS全データ自動投入（Hermes /goal）、taste-skill導入検討、ルクセリオ戦略書（関係性経済フレーム）執筆
+- **2026-05-06** | Referenced in [成田](../people/narita.md)
+- **2026-05-06** | Referenced in [パグオカ](../people/pugoka.md)
+- **2026-05-06** | Referenced in [nainaism](../companies/nainaism.md)
+- **2026-05-06** | Referenced in [SI](../companies/si.md)

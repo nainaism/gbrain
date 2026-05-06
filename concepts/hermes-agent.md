@@ -52,15 +52,18 @@ title: Hermes Agent
 - Notion AIの`ask`コマンドがcron contextでサイレント失敗する（5/4確認。workspace switch→message送信は成功扱いだがhistory=[]で応答なし）
 
 ## See Also
-- people/kaede
-- concepts/ai-factory
-- concepts/hindsight
-- concepts/gbrain
+- [[people/kaede]]
+- [[people/hakase]]
+- [[people/hanabi]]
+- [[concepts/ai-factory]]
+- [[concepts/hindsight]]
+- [[concepts/gbrain]]
+- [[concepts/ncli]]
 
 ## Timeline
-- 2026-04-12: Brainページ作成
-- 2026-04-23: LCM圧縮不发火トラブルシュート、cron jobs設定
-- 2026-04-28: v0.10.0
-- 2026-05-01: v0.12.0「The Curator Release」確認、全cronジョブモデル統一（glm-5.1/zai）
-- 2026-05-04: OpenCode Go provider追加（全5プロファイル）、Notion AI ask cron silent failure確認
-- 2026-05-05: OpenCode Goデフォルトモデル修正（glm-5→deepseek-v4-flash）、Hindsight統一確認
+- **2026-04-12** | Brainページ作成
+- **2026-04-23** | LCM圧縮不发火トラブルシュート、cron jobs設定
+- **2026-04-28** | v0.10.0
+- **2026-05-01** | v0.12.0「The Curator Release」確認、全cronジョブモデル統一（glm-5.1/zai）
+- **2026-05-04** | OpenCode Go provider追加（全5プロファイル）、Notion AI ask cron silent failure確認
+- **2026-05-05** | OpenCode Goデフォルトモデル修正（glm-5→deepseek-v4-flash）、Hindsight統一確認
