@@ -43,3 +43,7 @@ AIエージェント。Hermes Agent上で稼働するCOO（柴犬）。ai-factor
 - **2026-05-06** | Referenced in [成田](../people/narita.md)
 - **2026-05-06** | Referenced in [ai-factory](../concepts/ai-factory.md)
 - **2026-05-06** | Referenced in [Hermes Agent](../concepts/hermes-agent.md)
+- **2026-05-06** | Referenced in [はなび（Hanabi / CMO）](../people/hanabi.md)
+- **2026-05-06** | Referenced in [つき](../people/tsuki.md)
+- **2026-05-06** | Referenced in [パグオカ](../people/pugoka.md)
+- **2026-05-06** | Referenced in [ハカセ（Hakase / CTO）](../people/hakase.md)

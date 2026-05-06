@@ -20,6 +20,8 @@ type: companies
 - **2026-04-30** | kintone ACL再設計（App8/App37）+ 予算未入力店舗洗い出し設計
 - **2026-05-01** | companies/luxerioから分離・独立ページ化
 
+- **2026-05-06** | Referenced in [nainaism](../companies/nainaism.md)
+- **2026-05-06** | Referenced in [Luxerio](../companies/luxerio.md)
 ## See Also
 - [[companies/luxerio]]
 - [[companies/nainaism]]
