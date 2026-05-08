@@ -30,3 +30,7 @@
 {"date":"2026-05-08","source":"session","action":"none"}
 {"date":"2026-05-08","source":"hindsight","action":"none"}
 {"date":"2026-05-08","source":"chronicle","action":"none"}
+{"date":"2026-05-09","source":"session","action":"update","page":"concepts/hermes-agent.md","summary":"v0.13.0アップデート反映"}
+{"date":"2026-05-09","source":"session","action":"update","page":"concepts/gbrain.md","summary":"v0.28.11更新反映"}
+{"date":"2026-05-09","source":"hindsight","action":"none"}
+{"date":"2026-05-09","source":"chronicle","action":"none"}
