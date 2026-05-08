@@ -14,7 +14,7 @@ title: Hermes Agent
 - MCP対応: stdio + HTTP servers
 - ネイティブメモリ: Hindsight (vectorize-io)
 - 設定: ~/.hermes/config.yaml
-- バージョン: v0.12.0「The Curator Release」（5/1確認）
+- バージョン: v0.13.0（5/8アップデート。upstream +720 commits, 25パッチ適用, 4コンフリクト解決）
 
 ### 再起動方法
 - COO: `launchctl kickstart -k gui/$(id -u)/ai.hermes.gateway`
@@ -66,4 +66,4 @@ title: Hermes Agent
 - **2026-04-28** | v0.10.0
 - **2026-05-01** | v0.12.0「The Curator Release」確認、全cronジョブモデル統一（glm-5.1/zai）
 - **2026-05-04** | OpenCode Go provider追加（全5プロファイル）、Notion AI ask cron silent failure確認
-- **2026-05-05** | OpenCode Goデフォルトモデル修正（glm-5→deepseek-v4-flash）、Hindsight統一確認
+- **2026-05-08** | v0.13.0アップデート（upstream +720 commits, 4コンフリクト解決: web_tools→web_providers/, MCP resilience→upstream採用, display_config streaming除外, run_agent credential pool共存）
