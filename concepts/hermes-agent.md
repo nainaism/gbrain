@@ -34,6 +34,7 @@ title: Hermes Agent
 - deliver=null: ローカル実行（Hermes配送なし）
 - [SILENT]: レスポンス先頭に配置で配送スキップ（scheduler.py+base.py検知あり）
 - feedback-learning-cycle: 毎週日曜6:00 JST（SOUL.md思考プロトコルの一部、漏れ拾い）
+- **429回避策**: GLM-5（ZAI）のweekly usage limit到達時、brief trigger cronに切替で回避（5/9確認。133minポッドキャスト作業中に発生）
 
 ### LCM (Lossless Context Management)
 - context.engine: lcm
@@ -41,6 +42,15 @@ title: Hermes Agent
 - LCM_FRESH_TAIL_COUNT: 24, LCM_LEAF_CHUNK_TOKENS: 5000, LCM_DYNAMIC_LEAF_CHUNK_ENABLED: true
 - 圧縮不发火条件: large tool outputでbacklogがfresh_tail外に落ちてthreshold 20000を下回る（4/23確認）
 - 詳細: `devops/lcm-compression-troubleshoot` スキル参照
+
+### Kanban（5/10調査）
+- **アーキテクチャ**: SQLiteベースのタスク管理（`~/.hermes/kanban.db`）。dispatcher + worker構成、単一ホスト専用
+- **Toolset**: `kanban_*` ツール群（create/list/show/comment/block/unblock）。workerは`_check_kanban_mode()`で自動有効化（HERMES_KANBAN_TASK環境変数）
+- **Discord通知**: gatewayの`_kanban_notifier_watcher`が5秒ポーリングでイベント検知→自動通知。完了・ブロック等がDiscordに即時反映
+- **HITL**: P5 Human-in-the-loopパターン。block/unblock/commentで人間が介入可能。`/kanban` slash command or 自然言語からtool call
+- **Notion同期**: 未実装（5/10設計完了。一方通行同期の詳細設計あり。ステータスマッピング7→6状態、assignee→Leader relation等の課題解決済み）
+- **現状**: kanban toolsetはどのプロファイルのconfig.yamlでも有効化されていない（5/10確認）。有効化には各プロファイルのtoolsetsに`kanban`を追加必要
+- **Notion移行検討**: 成田さん「今のNotionタスク管理（PD/Worker cron）がうまく動いていない」。Kanban導入で安定化の可能性（SQLite即時反映 vs Notion API遅延、構造的アサイン vs LLM毎回判定）
 
 ### Skill管理
 - skills.disabled: opencode（ゾンビプロセス問題により4/30無効化。delegate_taskがopencode serveを終了させずメモリ肥大化）
@@ -67,3 +77,4 @@ title: Hermes Agent
 - **2026-05-01** | v0.12.0「The Curator Release」確認、全cronジョブモデル統一（glm-5.1/zai）
 - **2026-05-04** | OpenCode Go provider追加（全5プロファイル）、Notion AI ask cron silent failure確認
 - **2026-05-08** | v0.13.0アップデート（upstream +720 commits, 4コンフリクト解決: web_tools→web_providers/, MCP resilience→upstream採用, display_config streaming除外, run_agent credential pool共存）
+- **2026-05-10** | Kanban機能調査完了（アーキテクチャ・Discord HITL・Notion同期設計）。kanban-notion-sync / hermes-kanban スキル作成
