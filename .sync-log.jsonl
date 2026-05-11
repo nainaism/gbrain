@@ -37,3 +37,6 @@
 {"date":"2026-05-10","source":"session","action":"update","page":"concepts/hermes-agent.md","summary":"Kanban section added (architecture, toolset, Discord HITL, Notion sync design, current status)"}
 {"date":"2026-05-10","source":"chronicle","action":"update","page":"concepts/hermes-agent.md","summary":"429回避策追加 (GLM-5 weekly usage limit → brief trigger cron)"}
 {"date":"2026-05-10","source":"hindsight","action":"none"}
+{"date":"2026-05-12","source":"session","action":"update","page":"concepts/hermes-agent.md","summary":"TinyFish provider, coo profile, Kanban Goal flow, Notion Status values added"}
+{"date":"2026-05-12","source":"hindsight","action":"update","page":"concepts/hermes-agent.md","summary":"coo profile解決, TinyFish設定 from hindsight"}
+{"date":"2026-05-12","source":"chronicle","action":"none"}
