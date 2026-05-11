@@ -21,11 +21,12 @@ title: Hermes Agent
 - CTO: `launchctl kickstart -k gui/$(id -u)/ai.hermes.gateway-cto`
 - 絶対に `kill <pid>` 禁止（launchd KeepAliveと競合）
 
-### Providers（5/5更新）
+### Providers（5/12更新）
 - **ZAI**: メインプロバイダ（glm-5.1）。cronジョブ統一モデル
 - **Ollama Cloud**: サブプロバイダ。ハカセCTO・はなびCMOはOllamaをメインに設定変更可能
 - **OpenCode Go**: 5/4追加。環境変数 `OPENCODE_GO_API_KEY` + `OPENCODE_GO_BASE_URL`。provider名: `opencode-go`、デフォルトモデル: `deepseek-v4-flash`。全5プロファイル（COO/CTO/CMO/CFO/PUGOKA）に設定済み
   - HindsightのLLMもopencode-go deepseek-v4-flashに統一（5/5）
+- **TinyFish**: 5/11追加。web.search_backend + web.extract_backend。環境変数 `TINYFISH_API_KEY`。全4プロファイル（COO/CTO/CMO/CFO）に設定完了。パグオカは未設定
 
 ### Cronシステム
 - `cronjob` CLIでジョブ管理
@@ -43,7 +44,7 @@ title: Hermes Agent
 - 圧縮不发火条件: large tool outputでbacklogがfresh_tail外に落ちてthreshold 20000を下回る（4/23確認）
 - 詳細: `devops/lcm-compression-troubleshoot` スキル参照
 
-### Kanban（5/10調査）
+### Kanban（5/12更新）
 - **アーキテクチャ**: SQLiteベースのタスク管理（`~/.hermes/kanban.db`）。dispatcher + worker構成、単一ホスト専用
 - **Toolset**: `kanban_*` ツール群（create/list/show/comment/block/unblock）。workerは`_check_kanban_mode()`で自動有効化（HERMES_KANBAN_TASK環境変数）
 - **Discord通知**: gatewayの`_kanban_notifier_watcher`が5秒ポーリングでイベント検知→自動通知。完了・ブロック等がDiscordに即時反映
@@ -51,6 +52,9 @@ title: Hermes Agent
 - **Notion同期**: 未実装（5/10設計完了。一方通行同期の詳細設計あり。ステータスマッピング7→6状態、assignee→Leader relation等の課題解決済み）
 - **現状**: kanban toolsetはどのプロファイルのconfig.yamlでも有効化されていない（5/10確認）。有効化には各プロファイルのtoolsetsに`kanban`を追加必要
 - **Notion移行検討**: 成田さん「今のNotionタスク管理（PD/Worker cron）がうまく動いていない」。Kanban導入で安定化の可能性（SQLite即時反映 vs Notion API遅延、構造的アサイン vs LLM毎回判定）
+- **coo profile**: `~/.hermes/profiles/coo/`（空ディレクトリ）が存在し、dispatcherが認識する。以前`default`との混同で`assignee=coo`がspawnされない問題があった（5/11解決: symlink→空ディレクトリ）
+- **Kanban × Goal flow**: Research Jobのserial chain実績あり（t_35caed22→t_65ee25d7→t_d2606a52、5/11）
+- **Notion DB_factory_jobs Status許容値**: Draft, Queued, Running, Blocked, Done, Failed（「In Progress」は不可）
 
 ### Skill管理
 - skills.disabled: opencode（ゾンビプロセス問題により4/30無効化。delegate_taskがopencode serveを終了させずメモリ肥大化）
@@ -78,3 +82,4 @@ title: Hermes Agent
 - **2026-05-04** | OpenCode Go provider追加（全5プロファイル）、Notion AI ask cron silent failure確認
 - **2026-05-08** | v0.13.0アップデート（upstream +720 commits, 4コンフリクト解決: web_tools→web_providers/, MCP resilience→upstream採用, display_config streaming除外, run_agent credential pool共存）
 - **2026-05-10** | Kanban機能調査完了（アーキテクチャ・Discord HITL・Notion同期設計）。kanban-notion-sync / hermes-kanban スキル作成
+- **2026-05-11** | TinyFish web provider設定（COO/CTO/CMO/CFO）。coo profile問題解決（mkdir -p ~/.hermes/profiles/coo/）。Kanban×Goal serial chain初実績
