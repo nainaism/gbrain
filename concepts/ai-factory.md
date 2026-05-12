@@ -34,6 +34,12 @@ AIエージェントチーム（かえでCOO・ハカセCTO・はなびCMO・つ
 - プロジェクト完了時: 全タスクのProgressから成果を集約してプロジェクトbodyにレポート
 - Discord DM報告: 概要2-3行 + Notionリンクのみ（スレッドリンク不要、5/1成田さん指示）
 
+### Job ↔ Kanban 1:Nモデル（5/13確定）
+- Job（Notion DB_factory_jobs）を1:NでKanban tasksに分解して自律実行
+- Event-driven優先: webhook即時起動、cronはfallback
+- Webhook自動起動: job-queue-poller（launchd 5分間隔）→ HMAC署名付きPOST → かえで自動起動→Kanban tasks分解
+- 完全E2E確認済み: Job→Queued→webhook→orchestrator→Kanban tasks→dispatcher→done
+
 ### Cron Jobs
 - ambient-observer (73分): DB_x_bookmarks + DB_documents + Meeting Notes監視
 - gbrain-dream-cycle (4:00): Signal Sync + Activity Chronicle + メンテナンス
@@ -79,3 +85,4 @@ AIエージェントチーム（かえでCOO・ハカセCTO・はなびCMO・つ
 - **2026-04-29** | GBrain入力パイプライン統合完了（セッション+Chronicle+議事録）
 - **2026-05-01** | タスク/プロジェクト完了時の報告フォーマット変更（成果詳細 + Notion集約 + DM概要のみ）
 - **2026-05-01** | 全cronジョブのモデル統一（glm-5.1/zai/base_url=None）
+- **2026-05-13** | Job↔Kanban 1:Nモデル確定・Webhook自動起動実装・完全E2E確認

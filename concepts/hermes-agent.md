@@ -21,6 +21,14 @@ title: Hermes Agent
 - CTO: `launchctl kickstart -k gui/$(id -u)/ai.hermes.gateway-cto`
 - 絶対に `kill <pid>` 禁止（launchd KeepAliveと競合）
 
+### RTK CLI（5/13導入）
+- brew経由でv0.39.0インストール済み（`/opt/homebrew/bin/rtk`）
+- rtk-hermes plugin v1.2.3（Hermes venvにpip install済み）
+- config.yaml `rtk-rewrite` enabled
+- モード: `rewrite`（デフォルト、コマンド自動書き換え）/ `suggest`（候補のみ）/ `off`
+- 環境変数: `RTK_HERMES_MODE`, `RTK_HERMES_TIMEOUT_MS`（デフォルト2000ms）
+- テスト期間: 5/13〜6/13
+
 ### Providers（5/12更新）
 - **ZAI**: メインプロバイダ（glm-5.1）。cronジョブ統一モデル
 - **Ollama Cloud**: サブプロバイダ。ハカセCTO・はなびCMOはOllamaをメインに設定変更可能
@@ -49,9 +57,11 @@ title: Hermes Agent
 - **Toolset**: `kanban_*` ツール群（create/list/show/comment/block/unblock）。workerは`_check_kanban_mode()`で自動有効化（HERMES_KANBAN_TASK環境変数）
 - **Discord通知**: gatewayの`_kanban_notifier_watcher`が5秒ポーリングでイベント検知→自動通知。完了・ブロック等がDiscordに即時反映
 - **HITL**: P5 Human-in-the-loopパターン。block/unblock/commentで人間が介入可能。`/kanban` slash command or 自然言語からtool call
-- **Notion同期**: 未実装（5/10設計完了。一方通行同期の詳細設計あり。ステータスマッピング7→6状態、assignee→Leader relation等の課題解決済み）
-- **現状**: kanban toolsetはどのプロファイルのconfig.yamlでも有効化されていない（5/10確認）。有効化には各プロファイルのtoolsetsに`kanban`を追加必要
-- **Notion移行検討**: 成田さん「今のNotionタスク管理（PD/Worker cron）がうまく動いていない」。Kanban導入で安定化の可能性（SQLite即時反映 vs Notion API遅延、構造的アサイン vs LLM毎回判定）
+- **Notion同期**: kanban-notion-syncスキル作成済み（5/9）。一方通行同期の詳細設計あり。ステータスマッピング7→6状態、assignee→Leader relation等の課題解決済み
+- **Job ↔ Kanban 1:Nモデル**: 5/13設計確定。Job（Notion）を1:NでKanban tasksに分解して自律実行。Event-driven優先（cronはfallback）
+- **Webhook自動起動**: 5/13実装。job-queue-poller（launchd 5分間隔、ncli、LLM不使用）がDB_factory_jobsをチェック→HMAC署名付きPOSTでlocalhost:8644/webhooks/job-queue→かえで自動起動→Kanban tasks分解
+- **Parent-completion invariant**: 5/12復元。claim_taskが親未完了の子タスクのclaimを拒否（CAS UPDATE前regressionチェック）。E2E検証済み
+- **curl -d & 背景**: terminal toolで`-d`に`&`を含むインラインJSONを書くとbackgrounding誤検知→ブロック。`-d @/tmp/file.json`で回避（5/13確認）
 - **coo profile**: `~/.hermes/profiles/coo/`（空ディレクトリ）が存在し、dispatcherが認識する。以前`default`との混同で`assignee=coo`がspawnされない問題があった（5/11解決: symlink→空ディレクトリ）
 - **Kanban × Goal flow**: Research Jobのserial chain実績あり（t_35caed22→t_65ee25d7→t_d2606a52、5/11）
 - **Notion DB_factory_jobs Status許容値**: Draft, Queued, Running, Blocked, Done, Failed（「In Progress」は不可）
@@ -83,3 +93,5 @@ title: Hermes Agent
 - **2026-05-08** | v0.13.0アップデート（upstream +720 commits, 4コンフリクト解決: web_tools→web_providers/, MCP resilience→upstream採用, display_config streaming除外, run_agent credential pool共存）
 - **2026-05-10** | Kanban機能調査完了（アーキテクチャ・Discord HITL・Notion同期設計）。kanban-notion-sync / hermes-kanban スキル作成
 - **2026-05-11** | TinyFish web provider設定（COO/CTO/CMO/CFO）。coo profile問題解決（mkdir -p ~/.hermes/profiles/coo/）。Kanban×Goal serial chain初実績
+- **2026-05-12** | claim_task parent-completion invariant復元。ACP adapter fallback_model/credential_pool fix（401 crash回避）
+- **2026-05-13** | Job↔Kanban 1:Nモデル確定。Webhook自動起動実装・E2E完了。RTK CLI v0.39.0 + rtk-hermes plugin導入（テスト期間5/13〜6/13）。curl -d & 背景誤検知pitfall確認
