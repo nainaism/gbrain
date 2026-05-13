@@ -75,6 +75,11 @@ title: Hermes Agent
 - opencode serveがゾンビプロセス化しやすい（TUI終了時にserve残存、delegate_taskのcleanup漏れ）
 - Notion AIの`ask`コマンドがcron contextでサイレント失敗する（5/4確認。workspace switch→message送信は成功扱いだがhistory=[]で応答なし）
 
+### Computer Use（5/13有効化）
+- cua-driver v0.1.9インストール済み（`hermes tools enable computer_use`で有効化）
+- macOSアクセシビリティ・画面収録権限付与済み
+- テストで20要素検出確認（5/13）
+
 ## See Also
 - [[people/kaede]]
 - [[people/hakase]]
@@ -94,4 +99,4 @@ title: Hermes Agent
 - **2026-05-10** | Kanban機能調査完了（アーキテクチャ・Discord HITL・Notion同期設計）。kanban-notion-sync / hermes-kanban スキル作成
 - **2026-05-11** | TinyFish web provider設定（COO/CTO/CMO/CFO）。coo profile問題解決（mkdir -p ~/.hermes/profiles/coo/）。Kanban×Goal serial chain初実績
 - **2026-05-12** | claim_task parent-completion invariant復元。ACP adapter fallback_model/credential_pool fix（401 crash回避）
-- **2026-05-13** | Job↔Kanban 1:Nモデル確定。Webhook自動起動実装・E2E完了。RTK CLI v0.39.0 + rtk-hermes plugin導入（テスト期間5/13〜6/13）。curl -d & 背景誤検知pitfall確認
+- **2026-05-13** | Job↔Kanban 1:Nモデル確定。Webhook自動起動実装・E2E完了。RTK CLI v0.39.0 + rtk-hermes plugin導入（テスト期間5/13〜6/13）。curl -d & 背景誤検知pitfall確認。cua-driver v0.1.9インストール・computer_use有効化
