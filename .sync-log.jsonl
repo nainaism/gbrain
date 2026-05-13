@@ -45,3 +45,6 @@
 {"date":"2026-05-13","source":"session","action":"update","page":"concepts/ai-factory.md","summary":"Job-Kanban 1:N model + webhook auto-launch E2E"}
 {"date":"2026-05-13","source":"hindsight","action":"update","page":"concepts/hermes-agent.md","summary":"Hindsight confirmed RTK/webhook/ACP fallback facts"}
 {"date":"2026-05-13","source":"chronicle","action":"none"}
+{"date":"2026-05-14","source":"session","action":"none"}
+{"date":"2026-05-14","source":"hindsight","action":"update","page":"concepts/hermes-agent.md","summary":"cua-driver v0.1.9 computer_use有効化追記"}
+{"date":"2026-05-14","source":"chronicle","action":"none"}
