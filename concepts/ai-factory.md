@@ -24,6 +24,7 @@ AIエージェントチーム（かえでCOO・ハカセCTO・はなびCMO・つ
 - nainaism: メイン（ai-factory運営）
 - luxerio: Luxerio業務（Meeting Notesのみ）
 - si-corp: SI役員会議（#si-corp 1491278621460140072）
+- proj-kintone: SI Corp子Space。Kanban board + GitHub nainaism/proj-kintone + Notion Tasks + Discord #si-corp連携（5/14作成）
 
 ### 運用ルール
 - プロジェクト管理はai-factory NotionがSSOT
@@ -62,10 +63,16 @@ AIエージェントチーム（かえでCOO・ハカセCTO・はなびCMO・つ
 - test: 3点セット作成・期間監視・効能レポート
 - fast-track: 成田さんが「導入したい」と言ったツールはWatch/EvaluateをスキップしてTest直行
 
+### プロジェクト化基準（5/14変更）
+- 意味ベース判定: 複数フェーズ必要、複数人協業、明確なマイルストーン、分解して完全な成果物を生成する必要があるもの
+- 機械的ルール廃止: 工数>1週間・3+サブタスク分解可能 は削除
+
 ### スキル運用
 - nainaism-blog-article: ブログ執筆ワークフロー（かえでオーサリング→はなび執筆→かえでQA→成田さんレビュー）
 - blog-cover-gen: Cover画像生成（GPT-image-2）。グローバル化済み。
 - space-provisioning: 新規Space追加ワークフロー（3箇所設定: ローカル/GitHub, Discord, Notion）
+- kintone-reminder-notifications: kintoneリマインダー通知の運用・トラブルシューティング（5/14作成）
+- kintone-js-customization: kintoneカスタムJS開発・修正ワークフロー（5/14作成）
 
 ## See Also
 - [[people/narita]]
@@ -86,3 +93,4 @@ AIエージェントチーム（かえでCOO・ハカセCTO・はなびCMO・つ
 - **2026-05-01** | タスク/プロジェクト完了時の報告フォーマット変更（成果詳細 + Notion集約 + DM概要のみ）
 - **2026-05-01** | 全cronジョブのモデル統一（glm-5.1/zai/base_url=None）
 - **2026-05-13** | Job↔Kanban 1:Nモデル確定・Webhook自動起動実装・完全E2E確認
+- **2026-05-14** | proj-kintone Space作成・Kanban board設定。kintone Reminder通知本運用化。プロジェクト化基準を意味ベースに変更

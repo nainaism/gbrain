@@ -48,3 +48,7 @@
 {"date":"2026-05-14","source":"session","action":"none"}
 {"date":"2026-05-14","source":"hindsight","action":"update","page":"concepts/hermes-agent.md","summary":"cua-driver v0.1.9 computer_use有効化追記"}
 {"date":"2026-05-14","source":"chronicle","action":"none"}
+{"date":"2026-05-15","source":"session","action":"update","page":"companies/si.md","summary":"Reminder通知本運用化・再スケジュール条件・ACL権限・proj-kintoneボード追加"}
+{"date":"2026-05-15","source":"session","action":"update","page":"concepts/ai-factory.md","summary":"proj-kintone Space・プロジェクト化基準変更・kintone系スキル追加"}
+{"date":"2026-05-15","source":"hindsight","action":"update","page":"companies/si.md","summary":"Reminder通知仕組み・再スケジュール条件・ACL権限変更計画"}
+{"date":"2026-05-15","source":"chronicle","action":"none"}
