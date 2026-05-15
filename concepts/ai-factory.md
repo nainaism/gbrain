@@ -35,11 +35,14 @@ AIエージェントチーム（かえでCOO・ハカセCTO・はなびCMO・つ
 - プロジェクト完了時: 全タスクのProgressから成果を集約してプロジェクトbodyにレポート
 - Discord DM報告: 概要2-3行 + Notionリンクのみ（スレッドリンク不要、5/1成田さん指示）
 
-### Job ↔ Kanban 1:Nモデル（5/13確定）
+### Job ↔ Kanban 1:Nモデル（5/13確定, 5/15大幅改修）
 - Job（Notion DB_factory_jobs）を1:NでKanban tasksに分解して自律実行
 - Event-driven優先: webhook即時起動、cronはfallback
 - Webhook自動起動: job-queue-poller（launchd 5分間隔）→ HMAC署名付きPOST → かえで自動起動→Kanban tasks分解
 - 完全E2E確認済み: Job→Queued→webhook→orchestrator→Kanban tasks→dispatcher→done
+- **意味単位分解（5/15）**: 機械的3-taskテンプレ廃止。Job内容から意味のある作業単位でタスクを分解
+- **Sync = 動的再プランニング（5/15）**: 各まとまり終了後にSync挟み、成果レビュー + Notion本文追記 + 残りtodo再調整 + 新規タスク生成
+- **`--skill`注入（5/15）**: Syncに`--skill job-orchestrator`注入で再帰的に動的調整可能。ReportはbodyのDelivery指示 + Notion Thread URL解決のみ
 
 ### Cron Jobs
 - ambient-observer (73分): DB_x_bookmarks + DB_documents + Meeting Notes監視
@@ -94,3 +97,4 @@ AIエージェントチーム（かえでCOO・ハカセCTO・はなびCMO・つ
 - **2026-05-01** | 全cronジョブのモデル統一（glm-5.1/zai/base_url=None）
 - **2026-05-13** | Job↔Kanban 1:Nモデル確定・Webhook自動起動実装・完全E2E確認
 - **2026-05-14** | proj-kintone Space作成・Kanban board設定。kintone Reminder通知本運用化。プロジェクト化基準を意味ベースに変更
+- **2026-05-15** | job-orchestrator大幅改修（意味単位分解・Sync動的再プランニング・`--skill`注入・Report確実送信）

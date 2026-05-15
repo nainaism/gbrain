@@ -58,13 +58,14 @@ title: Hermes Agent
 - **Discord通知**: gatewayの`_kanban_notifier_watcher`が5秒ポーリングでイベント検知→自動通知。完了・ブロック等がDiscordに即時反映
 - **HITL**: P5 Human-in-the-loopパターン。block/unblock/commentで人間が介入可能。`/kanban` slash command or 自然言語からtool call
 - **Notion同期**: kanban-notion-syncスキル作成済み（5/9）。一方通行同期の詳細設計あり。ステータスマッピング7→6状態、assignee→Leader relation等の課題解決済み
-- **Job ↔ Kanban 1:Nモデル**: 5/13設計確定。Job（Notion）を1:NでKanban tasksに分解して自律実行。Event-driven優先（cronはfallback）
+- **Job ↔ Kanban 1:Nモデル**: 5/13設計確定、5/15大幅改修。Job（Notion）を1:NでKanban tasksに分解して自律実行。意味単位分解・Sync動的再プランニング・`--skill`注入で再帰的調整可能
 - **Webhook自動起動**: 5/13実装。job-queue-poller（launchd 5分間隔、ncli、LLM不使用）がDB_factory_jobsをチェック→HMAC署名付きPOSTでlocalhost:8644/webhooks/job-queue→かえで自動起動→Kanban tasks分解
 - **Parent-completion invariant**: 5/12復元。claim_taskが親未完了の子タスクのclaimを拒否（CAS UPDATE前regressionチェック）。E2E検証済み
 - **curl -d & 背景**: terminal toolで`-d`に`&`を含むインラインJSONを書くとbackgrounding誤検知→ブロック。`-d @/tmp/file.json`で回避（5/13確認）
 - **coo profile**: `~/.hermes/profiles/coo/`（空ディレクトリ）が存在し、dispatcherが認識する。以前`default`との混同で`assignee=coo`がspawnされない問題があった（5/11解決: symlink→空ディレクトリ）
 - **Kanban × Goal flow**: Research Jobのserial chain実績あり（t_35caed22→t_65ee25d7→t_d2606a52、5/11）
 - **Notion DB_factory_jobs Status許容値**: Draft, Queued, Running, Blocked, Done, Failed（「In Progress」は不可）
+- **`--skill`フラグ**: `hermes kanban create --skill <name>`でタスク作成時にスキルを強制ロード。spawnされたworkerが自動でスキルを読む（5/15確認）
 
 ### Skill管理
 - skills.disabled: opencode（ゾンビプロセス問題により4/30無効化。delegate_taskがopencode serveを終了させずメモリ肥大化）
@@ -100,3 +101,4 @@ title: Hermes Agent
 - **2026-05-11** | TinyFish web provider設定（COO/CTO/CMO/CFO）。coo profile問題解決（mkdir -p ~/.hermes/profiles/coo/）。Kanban×Goal serial chain初実績
 - **2026-05-12** | claim_task parent-completion invariant復元。ACP adapter fallback_model/credential_pool fix（401 crash回避）
 - **2026-05-13** | Job↔Kanban 1:Nモデル確定。Webhook自動起動実装・E2E完了。RTK CLI v0.39.0 + rtk-hermes plugin導入（テスト期間5/13〜6/13）。curl -d & 背景誤検知pitfall確認。cua-driver v0.1.9インストール・computer_use有効化
+- **2026-05-15** | job-orchestrator大幅改修（意味単位分解・Sync動的再プランニング・`--skill`フラグ注入・Report確実送信）
