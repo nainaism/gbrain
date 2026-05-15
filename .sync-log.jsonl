@@ -52,3 +52,7 @@
 {"date":"2026-05-15","source":"session","action":"update","page":"concepts/ai-factory.md","summary":"proj-kintone Space・プロジェクト化基準変更・kintone系スキル追加"}
 {"date":"2026-05-15","source":"hindsight","action":"update","page":"companies/si.md","summary":"Reminder通知仕組み・再スケジュール条件・ACL権限変更計画"}
 {"date":"2026-05-15","source":"chronicle","action":"none"}
+{"date":"2026-05-16","source":"session","action":"update","page":"concepts/ai-factory.md","summary":"Job↔Kanban 1:Nモデル5/15改修追記（意味単位分解・Sync動的再プランニング・--skill注入）"}
+{"date":"2026-05-16","source":"session","action":"update","page":"concepts/hermes-agent.md","summary":"--skillフラグKanban注入パターン追記・Job↔Kanban改修反映"}
+{"date":"2026-05-16","source":"hindsight","action":"update","page":"concepts/hermes-agent.md","summary":"Hindsight由来の--skill注入・Notion Job Thread URL解決パターン反映"}
+{"date":"2026-05-16","source":"chronicle","action":"none"}
