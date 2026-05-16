@@ -56,6 +56,7 @@ AIエージェントチーム（かえでCOO・ハカセCTO・はなびCMO・つ
 - project-driver-daily (9:00): 日次進捗レポートDM
 - project-worker: かえで担当タスク自動実行
 - write-journal-digest (21:00): 日次ジャーナルダイジェスト
+- kanban-daily-report: Kanban最適化デイリーレポート（全board横断集計）
 - factory-radar系 (週次/月次): 外部環境スキャン
 
 ### Factory Radar
@@ -98,3 +99,4 @@ AIエージェントチーム（かえでCOO・ハカセCTO・はなびCMO・つ
 - **2026-05-13** | Job↔Kanban 1:Nモデル確定・Webhook自動起動実装・完全E2E確認
 - **2026-05-14** | proj-kintone Space作成・Kanban board設定。kintone Reminder通知本運用化。プロジェクト化基準を意味ベースに変更
 - **2026-05-15** | job-orchestrator大幅改修（意味単位分解・Sync動的再プランニング・`--skill`注入・Report確実送信）
+- **2026-05-16** | リポジトリクリーンアップ（blog-post-tool/移動・不要ファイル削除、3,200→210ファイルに削減）
