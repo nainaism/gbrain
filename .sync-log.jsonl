@@ -56,3 +56,6 @@
 {"date":"2026-05-16","source":"session","action":"update","page":"concepts/hermes-agent.md","summary":"--skillフラグKanban注入パターン追記・Job↔Kanban改修反映"}
 {"date":"2026-05-16","source":"hindsight","action":"update","page":"concepts/hermes-agent.md","summary":"Hindsight由来の--skill注入・Notion Job Thread URL解決パターン反映"}
 {"date":"2026-05-16","source":"chronicle","action":"none"}
+{"date":"2026-05-17","source":"session","action":"update","page":"concepts/ai-factory.md","summary":"kanban-daily-report cron追加 + リポジトリクリーンアップTimeline追記"}
+{"date":"2026-05-17","source":"hindsight","action":"none"}
+{"date":"2026-05-17","source":"chronicle","action":"none"}
