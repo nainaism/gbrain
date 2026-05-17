@@ -43,3 +43,4 @@ type: companies
 - **2026-05-06** | Referenced in [ai-factory](../concepts/ai-factory.md)
 - **2026-05-06** | Referenced in [Luxerio](../companies/luxerio.md)
 - **2026-05-06** | Referenced in [SI](../companies/si.md)
+- **2026-05-17** | Referenced in [Algorithmic Trading](../projects/algorithmic-trading.md)
