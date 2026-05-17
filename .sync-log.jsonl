@@ -59,3 +59,7 @@
 {"date":"2026-05-17","source":"session","action":"update","page":"concepts/ai-factory.md","summary":"kanban-daily-report cron追加 + リポジトリクリーンアップTimeline追記"}
 {"date":"2026-05-17","source":"hindsight","action":"none"}
 {"date":"2026-05-17","source":"chronicle","action":"none"}
+{"date":"2026-05-18","source":"session","action":"none"}
+{"date":"2026-05-18","source":"hindsight","action":"none"}
+{"date":"2026-05-18","source":"chronicle","action":"create","page":"projects/algorithmic-trading.md","summary":"Algorithmic Trading新規ページ作成（CFB V2 / TSUKI v2 / 月次チャレンジ）"}
+{"date":"2026-05-18","source":"chronicle","action":"update","page":"people/tsuki.md","summary":"TSUKI Autonomous Trader v2設計・CFB V2 Walk-Forward検証追加"}
