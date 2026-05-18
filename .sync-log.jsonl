@@ -63,3 +63,9 @@
 {"date":"2026-05-18","source":"hindsight","action":"none"}
 {"date":"2026-05-18","source":"chronicle","action":"create","page":"projects/algorithmic-trading.md","summary":"Algorithmic Trading新規ページ作成（CFB V2 / TSUKI v2 / 月次チャレンジ）"}
 {"date":"2026-05-18","source":"chronicle","action":"update","page":"people/tsuki.md","summary":"TSUKI Autonomous Trader v2設計・CFB V2 Walk-Forward検証追加"}
+{"date":"2026-05-19","source":"session","action":"update","page":"people/tsuki.md","summary":"つきCFO プライマリ deepseek-v4-pro(crof.ai)変更、3番目フォールバック追加、Paseoアイコン追加、LLMトレーダーv4設計"}
+{"date":"2026-05-19","source":"session","action":"update","page":"people/kaede.md","summary":"Paseo ACPアイコン（柴犬🐕シルエット）追記"}
+{"date":"2026-05-19","source":"session","action":"update","page":"projects/algorithmic-trading.md","summary":"LLMトレーダーv4 React Agent設計、Chisiki!解析、CFB V2最終検証、Paper Trade集計"}
+{"date":"2026-05-19","source":"session","action":"update","page":"concepts/hermes-agent.md","summary":"Crof.ai provider追加、Paseo ACP統合セクション追加"}
+{"date":"2026-05-19","source":"hindsight","action":"none"}
+{"date":"2026-05-19","source":"chronicle","action":"update","page":"projects/algorithmic-trading.md","summary":"5/18 Activity Chronicle: CFB V2最終検証、LLMトレーダーv4設計、Chisiki!逆コンパイル"}
