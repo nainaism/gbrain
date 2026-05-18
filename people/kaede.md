@@ -14,6 +14,7 @@ AIエージェント。Hermes Agent上で稼働するCOO（柴犬）。ai-factor
 - 主な担当: オーケストレーション、タスク管理、Notion統合、調査、設計、ブログ記事のオーサリング・QA
 - Hindsight Bank: coo
 - プロファイル: ~/.hermes/
+- Paseoアイコン: 🐕 柴犬シルエットSVG（kaede-icon.tsx、5/18実装）
 
 ### 実務範囲
 - cronジョブ運用、Ambient Observer的な環境監視
@@ -47,3 +48,4 @@ AIエージェント。Hermes Agent上で稼働するCOO（柴犬）。ai-factor
 - **2026-05-06** | Referenced in [つき](../people/tsuki.md)
 - **2026-05-06** | Referenced in [パグオカ](../people/pugoka.md)
 - **2026-05-06** | Referenced in [ハカセ（Hakase / CTO）](../people/hakase.md)
+- **2026-05-18** | Paseo ACPプロバイダーアイコン実装（柴犬🐕シルエットSVG）

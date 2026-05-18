@@ -35,6 +35,7 @@ title: Hermes Agent
 - **OpenCode Go**: 5/4追加。環境変数 `OPENCODE_GO_API_KEY` + `OPENCODE_GO_BASE_URL`。provider名: `opencode-go`、デフォルトモデル: `deepseek-v4-flash`。全5プロファイル（COO/CTO/CMO/CFO/PUGOKA）に設定済み
   - HindsightのLLMもopencode-go deepseek-v4-flashに統一（5/5）
 - **TinyFish**: 5/11追加。web.search_backend + web.extract_backend。環境変数 `TINYFISH_API_KEY`。全4プロファイル（COO/CTO/CMO/CFO）に設定完了。パグオカは未設定
+- **Crof.ai**: 5/18追加。つき(CFO)のプライマリプロバイダー変更（glm-5.1-precision → deepseek-v4-pro）。provider名: `crof-ai`
 
 ### Cronシステム
 - `cronjob` CLIでジョブ管理
@@ -71,6 +72,14 @@ title: Hermes Agent
 - skills.disabled: opencode（ゾンビプロセス問題により4/30無効化。delegate_taskがopencode serveを終了させずメモリ肥大化）
 - Curator機能（自動スキル保守）: upstream/hermes/curator-infraブランチで開発中、main未マージ
 
+### Paseo ACP統合（5/18実装）
+- ACP（Agent Communication Protocol）経由でPaseoデスクトップアプリからhermes-coo/hermes-cfoと対話
+- カスタムプロバイダーアイコン: かえで🐕 = `kaede-icon.tsx`（柴犬シルエット）、つき🐰 = `tsuki-icon.tsx`（ウサギシルエット）
+- `provider-icons.ts` で `hermes-coo` → 柴犬、`hermes-cfo` → ウサギ マッピング
+- ビルドバージョン: Paseo v0.1.57-rc.1（5/18）
+- **コード署名注意**: ad-hoc署名（identityName=- identityHash=none）はmacOS Gatekeeperで弾かれる。回避策: 既存署名済み.appのJSバンドルだけ差し替え、または `xattr -cr /Applications/Paseo.app`
+- index.htmlのバンドル名参照ズレ注意: リビルド後はindex.html内のJS filename参照も更新が必要（5/18確認）
+
 ### 既知の問題
 - [SILENT]強調しすぎるとLLMがスクリプト実行をスキップする（アンチパターン）
 - opencode serveがゾンビプロセス化しやすい（TUI終了時にserve残存、delegate_taskのcleanup漏れ）
@@ -102,3 +111,4 @@ title: Hermes Agent
 - **2026-05-12** | claim_task parent-completion invariant復元。ACP adapter fallback_model/credential_pool fix（401 crash回避）
 - **2026-05-13** | Job↔Kanban 1:Nモデル確定。Webhook自動起動実装・E2E完了。RTK CLI v0.39.0 + rtk-hermes plugin導入（テスト期間5/13〜6/13）。curl -d & 背景誤検知pitfall確認。cua-driver v0.1.9インストール・computer_use有効化
 - **2026-05-15** | job-orchestrator大幅改修（意味単位分解・Sync動的再プランニング・`--skill`フラグ注入・Report確実送信）
+- **2026-05-18** | Crof.ai provider追加（つきCFO プライマリ deepseek-v4-pro）。Paseo ACPカスタムアイコン実装（かえで🐕・つき🐰）
