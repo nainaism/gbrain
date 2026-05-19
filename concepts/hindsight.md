@@ -10,7 +10,7 @@ type: concepts
 
 ## State
 - バックエンド: Docker (port 8888), Guard Proxy (port 8887)
-- Banks: coo (かえで), cto (ハカセ), pugoka (パグオカ)
+- Banks: coo (かえで), cfo (つき・旧tsuki), cto (ハカセ), cmo (はなび), pugoka (パグオカ), tsuki-trader (つき・トレード特化)
 - **LLM: opencode-go deepseek-v4-flash**（Default/Retain両方統一。5/5変更）
   - API: https://opencode.ai/zen/go/v1
   - 以前: Default=ZAI glm-4.7, Retain=Ollama Cloud kimi-k2.6（rate limit/timeout問題で5/5に統一切替）
@@ -53,3 +53,4 @@ type: concepts
 - **2026-04-24** | 429 rate limit問題確認
 - **2026-05-03** | LiteLLMフォールバック実装（Ollama Cloud→ZAI自動切替）
 - **2026-05-05** | LLMをopencode-go deepseek-v4-flashに統一（Default/Retain両方）。sitecustomize.py monkey-patch廃止
+- **2026-05-19** | Bank tsuki→cfoにリネーム（5,396メモリ・2,517エンティティ移行）。全プロファイルHindsightポート8887に統一

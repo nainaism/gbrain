@@ -14,7 +14,7 @@ AIエージェント。Hermes Agent上で稼働するCFO（月とウサギのモ
 - Bot ID: （要確認）
 - Webhook Port: 8648
 - プロファイル: ~/.hermes/profiles/tsuki/
-- Hindsight Bank: （要確認）
+- Hindsight Bank: cfo（旧tsukiから5/19にリネーム）
 - キャラクターデザイン: 女性CFO、月とウサギモチーフ。金融の印象を重視、トレード要素は控えめ。かえではなびと統一した可愛いトーン。怖い・大人すぎるデザインは避ける。
 - Paseoアイコン: 🐰 ウサギシルエットSVG（tsuki-icon.tsx、5/18実装）
 
@@ -42,4 +42,4 @@ AIエージェント。Hermes Agent上で稼働するCFO（月とウサギのモ
 - **2026-05-17** | TSUKI Autonomous Trader v2設計開始。CFB V2 Walk-Forward検証PASS
 - **2026-05-17** | Referenced in [Algorithmic Trading](../projects/algorithmic-trading.md)
 - **2026-05-18** | プライマリモデルをdeepseek-v4-pro(crof.ai)に変更。opencode-go 3番目フォールバック追加
-- **2026-05-18** | LLMトレーダーv4 React Agent設計（2-Phase Hindsight、ReAct分割、A/B設計）
+- **2026-05-19** | Hindsight Bank IDをtsuki→cfoにリネーム（5,396メモリ移行）。全プロファイルHindsightポート8887統一
