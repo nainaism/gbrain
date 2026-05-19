@@ -69,3 +69,7 @@
 {"date":"2026-05-19","source":"session","action":"update","page":"concepts/hermes-agent.md","summary":"Crof.ai provider追加、Paseo ACP統合セクション追加"}
 {"date":"2026-05-19","source":"hindsight","action":"none"}
 {"date":"2026-05-19","source":"chronicle","action":"update","page":"projects/algorithmic-trading.md","summary":"5/18 Activity Chronicle: CFB V2最終検証、LLMトレーダーv4設計、Chisiki!逆コンパイル"}
+{"date":"2026-05-20","source":"session","action":"update","page":"concepts/hindsight.md","summary":"Banks一覧を更新(coo,cfo,cto,cmo,pugoka,tsuki-trader)、5/19 bank移行timeline追加"}
+{"date":"2026-05-20","source":"session","action":"update","page":"people/tsuki.md","summary":"Hindsight Bank IDをtsuki→cfoに更新、5/19 timeline追加"}
+{"date":"2026-05-20","source":"hindsight","action":"update","page":"concepts/hindsight.md","summary":"Hindsight recallからbank移行情報を反映"}
+{"date":"2026-05-20","source":"chronicle","action":"none"}
