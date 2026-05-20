@@ -26,6 +26,7 @@ AIエージェント。Hermes Agent上で稼働する別bot。OpenClawからHerm
 - **2026-04-22** | Hermes pugokaプロファイル作成、launchd登録完了
 - **2026-04-22** | OpenClaw停止、launchdエントリ削除・アンロード
 - 既存Bot Tokenを流用、18チャンネル構築済み
+- **2026-05-20** | pydantic-coreインポートエラー(`cannot import name 'iter_union_choices'`)発生・修正
 
 ## See Also
 - [[companies/luxerio]]
@@ -38,3 +39,4 @@ AIエージェント。Hermes Agent上で稼働する別bot。OpenClawからHerm
 - **2026-05-06** | Referenced in [成田](../people/narita.md)
 - **2026-05-06** | Referenced in [ai-factory](../concepts/ai-factory.md)
 - **2026-05-06** | Referenced in [Luxerio](../companies/luxerio.md)
+- **2026-05-20** | pydantic-coreインポートエラー(`iter_union_choices`)発生・修正
