@@ -73,3 +73,7 @@
 {"date":"2026-05-20","source":"session","action":"update","page":"people/tsuki.md","summary":"Hindsight Bank IDをtsuki→cfoに更新、5/19 timeline追加"}
 {"date":"2026-05-20","source":"hindsight","action":"update","page":"concepts/hindsight.md","summary":"Hindsight recallからbank移行情報を反映"}
 {"date":"2026-05-20","source":"chronicle","action":"none"}
+{"date":"2026-05-21","source":"session","action":"update","page":"concepts/ncli.md","summary":"npm updateパッチ消失・tokens.jsonパス不一致の既知バグ2件追加"}
+{"date":"2026-05-21","source":"session","action":"update","page":"projects/algorithmic-trading.md","summary":"CFB V2 Retrace/Trail TP最適化・volume-imbalance戦略レビュー・chibitrade逆コンパイル追加"}
+{"date":"2026-05-21","source":"chronicle","action":"update","page":"people/pugoka.md","summary":"pydantic-coreインポートエラー発生・修正の時系列追加"}
+{"date":"2026-05-21","source":"hindsight","action":"update","page":"concepts/ncli.md","summary":"NCLI認証トラブルのHindsight retain実行"}
